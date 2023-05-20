@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from '../home/home.component';
 import { QuienesSomosComponent } from '../quienes-somos/quienes-somos.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
+import { FooterComponent } from '../footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     QuienesSomosComponent,
     ContactFormComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
