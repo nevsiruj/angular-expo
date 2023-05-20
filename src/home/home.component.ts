@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-homes',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
