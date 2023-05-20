@@ -4,6 +4,6 @@ import { LandingPageComponent } from './landing-page.component'; // Importa el c
 
 @NgModule({
   declarations: [LandingPageComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, LandingPageComponent],
 })
 export class LandingPageModule {}
