@@ -7,7 +7,7 @@ import { QuienesSomosComponent } from '../quienes-somos/quienes-somos.component'
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'quienessomos', component: QuienesSomosComponent },
-  { path: 'quienessomos', component: ContactFormComponent },
+  { path: 'contacto', component: ContactFormComponent },
 ];
 
 @NgModule({
