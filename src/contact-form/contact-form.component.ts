@@ -8,12 +8,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactFormComponent implements OnInit {
   contactForm: FormGroup;
+  submitted = false;
 
   constructor(private formBuilder: FormBuilder) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phone: ['', Validators.required],
+      phone: [''],
       message: ['', Validators.required],
     });
   }
@@ -21,12 +22,13 @@ export class ContactFormComponent implements OnInit {
   ngOnInit(): void {}
 
   submitForm(): void {
-    if (this.contactForm.valid) {
-      const formValues = this.contactForm.value;
-      console.log('Form Values:', formValues);
-      // Aquí puedes añadir la lógica para enviar estos datos a tu servidor o servicio de email.
-    } else {
-      console.log('Form is not valid');
+    this.submitted = true;
+
+    if (this.contactForm.invalid) {
+      return;
     }
+
+    // Enviar el formulario
   }
+
 }
