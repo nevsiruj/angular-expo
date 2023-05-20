@@ -5,11 +5,17 @@ import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from '../home/home.component';
 import { QuienesSomosComponent } from '../quienes-somos/quienes-somos.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, QuienesSomosComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    QuienesSomosComponent,
+    ContactFormComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
