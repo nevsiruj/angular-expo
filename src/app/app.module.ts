@@ -1,7 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LandingPageModule } from '../landing-page/landing-page.module';
-// import { LandingPageModule } from '../landing-page/landing-page.module';
+import { LandingPageComponent } from '../landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -9,11 +8,10 @@ import { LandingPageModule } from '../landing-page/landing-page.module';
     // other components here
   ],
   imports: [
-    BrowserModule,
     LandingPageModule,
     // other modules here
   ],
   providers: [],
-  bootstrap: [],
+  bootstrap: [LandingPageComponent],
 })
 export class AppModule {}
