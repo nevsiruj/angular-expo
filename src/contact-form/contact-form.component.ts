@@ -29,6 +29,6 @@ export class ContactFormComponent implements OnInit {
     }
 
     // Enviar el formulario
+    alert('Correcto');
   }
-
 }
