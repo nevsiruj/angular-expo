@@ -1,1 +1,6 @@
 /* Add application styles & imports to this file! */
+:root {
+  --color-Burnham: '#003327';
+  --color-BudaOro: '#D39400';
+  --color-Plata: '#Bababa';
+}
