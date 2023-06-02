@@ -1,28 +1,66 @@
+<style>
+
+  :root{
+    --color-Burnham: '#003327';
+    --color-BudaOro: '#D39400';
+    --color-Plata: '#Bababa';
+  }
+</style>
+
+<head>
+  <link rel="stylesheet" href="/src/home/home.component.css" />
+</head>
+
 <nav
   style="background-color: #003327;"
-  class="py-5 flex md:justify-around justify-between px-8 md:px-0 items-center"
+  class="
+    sm:py-5
+    py-0
+    flex
+    md:justify-around
+    justify-between
+    px-8
+    md:px-0
+    items-center
+  "
 >
-  <div
-    class=""
-    style="width: 100px; height: 100px; background-image: url('imagen_2023-05-29_154433267-removebg-preview.png');"
-  >
-    <img src="" alt="" />
+  <div class="">
+    <img
+      style="width: 140px; height: 140px;"
+      src="https://files.fm/thumb.php?i=pa8xyadkt"
+      alt=""
+    />
   </div>
   <ul class="flex justify-around gap-10 md:flex hidden">
     <li>
       <a
-        style="background-color: #D39400;"
         class="
           rounded
-          text-white
+          text-yellow-500
           transition-colors
           font-medium
           duration-500
           py-1
           px-2
         "
-        routerLink="/"
+        routerLink="/src/home/home.component.html"
         >Home</a
+      >
+    </li>
+    <li>
+      <a
+        class="
+          rounded
+          text-white
+          hover:text-yellow-500
+          transition-colors
+          font-medium
+          duration-500
+          py-1
+          px-2
+        "
+        routerLink="/src/quienes-somos/quienes-somos.component.html"
+        >Sponsor</a
       >
     </li>
     <li>
