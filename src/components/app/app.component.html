@@ -1,16 +1,3 @@
-<style>
-
-  :root{
-    --color-Burnham: '#003327';
-    --color-BudaOro: '#D39400';
-    --color-Plata: '#Bababa';
-  }
-</style>
-
-<head>
-  <link rel="stylesheet" href="/src/home/home.component.css" />
-</head>
-
 <nav
   style="background-color: #003327;"
   class="
@@ -22,15 +9,18 @@
     px-8
     md:px-0
     items-center
+    md:h-20
   "
 >
-  <div class="">
+  <div>
     <img
-      style="width: 140px; height: 140px;"
+      class="w-40 h-40"
       src="https://files.fm/thumb.php?i=pa8xyadkt"
       alt=""
+      routerLink="/"
     />
   </div>
+
   <ul class="flex justify-around gap-10 md:flex hidden">
     <li>
       <a
@@ -43,7 +33,7 @@
           py-1
           px-2
         "
-        routerLink="/src/home/home.component.html"
+        routerLink="/"
         >Home</a
       >
     </li>
