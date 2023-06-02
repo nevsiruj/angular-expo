@@ -4,3 +4,7 @@
   --color-BudaOro: '#D39400';
   --color-Plata: '#Bababa';
 }
+
+body {
+  font-family: 'Phonk-Regular', sans-serif;
+}
