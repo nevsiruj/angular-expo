@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactFormComponent } from '../contact-form/contact-form.component';
+import { ContactFormComponent } from '../components/contact-form/contact-form.component';
 import { HomeComponent } from '../home/home.component';
 import { QuienesSomosComponent } from '../quienes-somos/quienes-somos.component';
 
