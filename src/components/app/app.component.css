@@ -1,0 +1,13 @@
+
+:root{
+    --color-Burnham: '#003327';
+    --color-BudaOro: '#D39400';
+    --color-Plata: '#Bababa';
+  }
+.act:focus{
+    color: #D39400;
+}
+
+.act:hover{
+    color: #D39400;
+}
