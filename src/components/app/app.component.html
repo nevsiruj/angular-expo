@@ -14,19 +14,17 @@
 >
   <div>
     <img
-      class="w-40 h-40"
+      class="w-40 h-40 cursor-pointer"
       src="https://files.fm/thumb.php?i=pa8xyadkt"
       alt=""
       routerLink="/"
     />
-    
   </div>
 
   <ul class="flex justify-around gap-10 md:flex hidden">
     <li>
       <a
         class="
-        act
           rounded
           text-white
           transition-colors
@@ -36,6 +34,8 @@
           px-2
         "
         routerLink="/"
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{exact: true}"
         >Home</a
       >
     </li>
@@ -50,9 +50,14 @@
           duration-500
           py-1
           px-2
+        
         "
         routerLink="/src/quienes-somos/quienes-somos.component.html"
-        >Sponsor</a
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{exact: true}"
+        >Sponsor
+        <br> / Expositor
+        </a
       >
     </li>
     <li>
@@ -65,6 +70,8 @@
           font-medium
         "
         routerLink="/quienessomos"
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{exact: true}"
         >Quienes Somos</a
       >
     </li>
@@ -78,6 +85,8 @@
           font-medium
         "
         routerLink="/contacto"
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{exact: true}"
         >Contacto</a
       >
     </li>
