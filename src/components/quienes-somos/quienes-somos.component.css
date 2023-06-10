@@ -1,0 +1,9 @@
+.about article{
+    width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .about article{
+        width: 100%;
+    }
+}

@@ -1,3 +1,10 @@
+
+:root{
+  --color-Burnham: '#003327';
+  --color-BudaOro: '#D39400';
+  --color-Plata: '#Bababa';
+}
+
 .countdown {
   font-size: 24px;
   font-family: Arial, sans-serif;
@@ -30,4 +37,40 @@
 .btn-w{
   width: 230px;
   padding: .5rem;
+}
+
+.countdown-2{
+   
+  background-color: rgb(0, 51, 39, .5);
+  color: #fff;
+  animation: fadeInOut 4s ease-in-out infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+
+}
+
+.countdown-2 p{
+  line-height: 40px;
+  font-size: 13px;  
+}
+
+.countdown-2 span{
+  font-weight: 600;
+  display: block;
+  font-size: 60px;
+}
+
+
+@media screen and (max-width: 511px) {
+  .countdown-2{
+   flex-direction: column;
+   width: 150px;
+   margin: 0 auto;
+  }
 }

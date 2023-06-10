@@ -16,6 +16,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
   ],
 })
 export class HomeComponent implements OnInit {
+  
   days: number = 0;
   hours: number = 0;
   minutes: number = 0;

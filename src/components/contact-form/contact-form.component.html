@@ -1,10 +1,13 @@
 <div
-  class="w-full h-40 bg-cover bg-center mb-8"
-  style="background-image: url('https://via.placeholder.com/150')"
+  class="w-full h-40 bg-cover bg-center"
+  style="background-image: url('https://images.pagina12.com.ar/styles/focal_16_9_960x540/public/media/articles/21956/cannabis-20sab-20foto-20bernardino-20avila.jpg?h=909d1648&itok=onoBWCsA')"
 ></div>
+
+<section class="contact-sec mb-8 mt-8">
 
   <div
     class="
+    opa
       bg-blue
       max-w-screen-lg
       mx-auto
@@ -16,11 +19,15 @@
       pb-2
       mb-2
     "
+    
   >
+  
     <form
+      
       (ngSubmit)="submitForm()"
       [formGroup]="contactForm"
-      class="bg-white rounded px-8 pt-6 pb-8 mb-4"
+      class="bg-white rounded px-8 pt-6 pb-8 mb-4 form"
+      
     >
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
@@ -78,7 +85,7 @@
           formControlName="email"
           required
         />
-        <!-- Validaciones -->
+
         <div
           *ngIf="
             contactForm.controls.email.invalid &&
@@ -89,9 +96,7 @@
         >
           El email es requerido.
         </div>
-        <!-- <div *ngIf="contactForm.get('email').errors.email">
-        El email no es válido.
-      </div> -->
+
       </div>
 
       <div class="mb-4">
@@ -138,7 +143,7 @@
           formControlName="message"
           required
         ></textarea>
-        <!-- Validaciones -->
+        
         <div
           *ngIf="
             contactForm.controls.message.invalid &&
@@ -171,4 +176,7 @@
         </button>
       </div>
     </form>
+
+
   </div>
+</section>
