@@ -21,10 +21,10 @@
     width: 100%;
     padding: 1rem;
     z-index: 9;
+    overflow: hidden;
 }
 .nav a{
     font-size: 18px;
-    font-weight: 400;
 }
 
 .flex-active{
@@ -49,7 +49,7 @@
 }
 
 .drop-content{
-    width: 100px;
+    width: auto;
     padding: 0rem .5rem;
     position: fixed;
     display: grid;

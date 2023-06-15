@@ -52,7 +52,7 @@
           py-1
           px-2
         "
-        routerLink="/sponsor"
+
         routerLinkActive="class-name"
         [routerLinkActiveOptions]="{ exact: true }"
       >
@@ -69,8 +69,8 @@
               fill-rule="evenodd"
               d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
               clip-rule="evenodd"
-            ></path></svg
-        ></span>
+            ></path></svg>
+          </span>
         <span>
           <input type="checkbox" class="check" />
         </span>
@@ -78,13 +78,10 @@
       <div class="drop-content">
         <ul class="drop-sub">
           <li>
-            <a href=""> Link </a>
-          </li>
-          <li>
-            <a href=""> Link </a>
-          </li>
-          <li>
-            <a href=""> Link </a>
+            <a href=""
+            routerLink="/sponsor"
+            (click)="toggleNavbar()"
+            > Expositor </a>
           </li>
         </ul>
       </div>
@@ -130,7 +127,6 @@
     >
       <i class="text-white fas fa-bars"></i>
     </button>
-
     <div
       class="
         lg:flex
@@ -142,7 +138,7 @@
       "
       [ngClass]="{ hidden: !showMenu, block: showMenu }"
     >
-      <ul class="flex flex-col gap-4 md:flex items-start">
+      <ul class="flex flex-col gap-4 md:flex items-start ">
         <li>
           <a
             class="
@@ -154,6 +150,7 @@
               py-1
               px-2
             "
+            (click)="toggleNavbar()"
             routerLink="/"
             routerLinkActive="class-name"
             [routerLinkActiveOptions]="{ exact: true }"
@@ -172,8 +169,10 @@
               py-1
               px-2
             "
+            
             routerLinkActive="class-name"
             [routerLinkActiveOptions]="{ exact: true }"
+          
             >Sponsor
             <span
               ><svg
@@ -187,8 +186,7 @@
                   fill-rule="evenodd"
                   d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                   clip-rule="evenodd"
-                ></path></svg
-            ></span>
+                ></path></svg></span>
             <span>
               <input type="checkbox" class="check" />
             </span>
@@ -196,13 +194,10 @@
           <div class="drop-content">
             <ul class="drop-sub">
               <li>
-                <a href=""> Link </a>
-              </li>
-              <li>
-                <a href=""> Link </a>
-              </li>
-              <li>
-                <a href=""> Link </a>
+                <a href=""
+                (click)="toggleNavbar()"
+                
+                routerLink="/sponsor"> Expositor </a>
               </li>
             </ul>
           </div>
@@ -213,6 +208,7 @@
             routerLink="/quienessomos"
             routerLinkActive="class-name"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="toggleNavbar()"
             > Quienes Somos</a
           >
         </li>
@@ -222,6 +218,7 @@
             routerLink="/contacto"
             routerLinkActive="class-name"
             [routerLinkActiveOptions]="{ exact: true }"
+            (click)="toggleNavbar()"
             > Contacto</a
           >
         </li>
