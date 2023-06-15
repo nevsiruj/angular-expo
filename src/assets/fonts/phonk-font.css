@@ -1,7 +1,0 @@
-@font-face {
-  font-family: 'Phonk-Regular';
-  src: url('./phonk-regular.woff2') format('woff2'),
-    url('./phonk-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
