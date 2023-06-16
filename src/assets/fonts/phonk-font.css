@@ -1,6 +1,18 @@
-@font-face {
+/* @font-face {
   font-family: 'Phonk-Regular';
   src: url(phonk-regular-demo.otf);
   font-weight: lighter;
   font-style: normal;
+} */
+@font-face {
+  font-family: 'Phonk-Regular';
+  src: url('../fonts/phonk-regular.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/phonk-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/phonk-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/phonk-regular.woff')
+      format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+      url('../fonts/phonk-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/phonk-regular.svg#phonk-regular')
+      format('svg'); /* Chrome < 4, Legacy iOS */
 }
