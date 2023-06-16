@@ -75,17 +75,18 @@
   .countdown-2{
     margin: 0 auto;
     gap: 30px;
+    padding: 2rem 2rem 1rem 2rem;
   }
   
   .countdown-2 p{
-    line-height: 40px;
-    font-size: 10px;  
+    line-height: 25px;
+    font-size: 10px;
   }
 
   .countdown-2 span{
     font-weight: 600;
     display: block;
-    font-size: 30px;
+    font-size: 50px;
   }
 
 }
@@ -93,6 +94,11 @@
 @media screen and (max-width: 570px) {
   .mobile-hidden{
     display: none;
+  }
+  .countdown-2{
+    margin: 0 auto;
+    gap: 30px;
+    padding: 1rem ;
   }
 }
 @media screen and (max-width: 545px) {
@@ -114,6 +120,7 @@
   .countdown-2{
     margin: 0 auto;
     gap: 20px;
+
   }
   
   .countdown-2 p{

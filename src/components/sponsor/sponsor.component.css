@@ -1,0 +1,40 @@
+:root{
+    --color-Burnham: '#003327';
+    --color-BudaOro: '#D39400';
+    --color-Plata: '#Bababa';
+  }
+  
+
+.contact-sec{
+    height: auto;
+    padding: 5rem 2rem;
+    width: 100%;
+    background: #fff;
+    background-image: url(
+        https://files.fm/thumb_show.php?i=2329cjvr8
+        );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+
+.position-header{
+    background: rgb(212, 148, 0);
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding-left: 5rem;
+}
+
+
+@media screen and (max-width: 635px) {
+    .position-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    
+}
