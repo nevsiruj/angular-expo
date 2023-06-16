@@ -1,0 +1,232 @@
+<nav
+  style="background-color: #003327;"
+  class="
+    sm:py-5
+    py-0
+    flex
+    md:justify-around
+    justify-between
+    px-8
+    md:px-0
+    items-center
+    md:h-20
+  "
+>
+  <div>
+    <img
+      class="w-40 h-40 cursor-pointer"
+      src="https://files.fm/thumb.php?i=pa8xyadkt"
+      alt=""
+      routerLink="/"
+    />
+  </div>
+
+  <ul class="flex justify-around gap-10 md:flex hidden">
+    <li>
+      <a
+        class="
+          rounded
+          text-white
+          transition-colors
+          font-medium
+          duration-500
+          py-1
+          px-2
+        "
+        routerLink="/"
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li class="drop-list">
+      <a
+        class="
+          flex-active
+          act
+          rounded
+          text-white
+          transition-colors
+          font-medium
+          duration-500
+          py-1
+          px-2
+        "
+
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Sponsor
+        <span
+          ><svg
+            class="w-5 h-5 ml-1"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path></svg>
+          </span>
+        <span>
+          <input type="checkbox" class="check" />
+        </span>
+      </a>
+      <div class="drop-content">
+        <ul class="drop-sub">
+          <li>
+            <a href=""
+            routerLink="/sponsor"
+            (click)="toggleNavbar()"
+            > Expositor </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <a
+        class="act text-white transition-colors duration-500 font-medium"
+        routerLink="/quienessomos"
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Quienes Somos</a
+      >
+    </li>
+    <li>
+      <a
+        class="act text-white transition-colors duration-500 font-medium"
+        routerLink="/contacto"
+        routerLinkActive="class-name"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Contacto</a
+      >
+    </li>
+  </ul>
+
+  <div class="md:hidden flex flex-col">
+    <button
+      class="
+        cursor-pointer
+        text-xl
+        leading-none
+        px-3
+        py-1
+        border border-solid border-transparent
+        rounded
+        bg-transparent
+        block
+        lg:hidden
+        outline-none
+        focus:outline-none
+      "
+      type="button"
+      (click)="toggleNavbar()"
+    >
+      <i class="text-white fas fa-bars"></i>
+    </button>
+    <div
+      class="
+        lg:flex
+        flex-grow
+        items-center
+        bg-white
+        lg:bg-transparent lg:shadow-none
+        nav
+      "
+      [ngClass]="{ hidden: !showMenu, block: showMenu }"
+    >
+      <ul class="flex flex-col gap-4 md:flex items-start ">
+        <li>
+          <a
+            class="
+              rounded
+              text-black
+              transition-colors
+              font-medium
+              duration-500
+              py-1
+              px-2
+            "
+            (click)="toggleNavbar()"
+            routerLink="/"
+            routerLinkActive="class-name"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="drop-list">
+          <a
+            class="
+              flex-active
+              act
+              rounded
+              transition-colors
+              font-medium
+              duration-500
+              py-1
+              px-2
+            "
+            
+            routerLinkActive="class-name"
+            [routerLinkActiveOptions]="{ exact: true }"
+          
+            >Sponsor
+            <span
+              ><svg
+                class="w-5 h-5 ml-1"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path></svg></span>
+            <span>
+              <input type="checkbox" class="check" />
+            </span>
+          </a>
+          <div class="drop-content">
+            <ul class="drop-sub">
+              <li>
+                <a href=""
+                (click)="toggleNavbar()"
+                
+                routerLink="/sponsor"> Expositor </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a
+            class="act text-black transition-colors duration-500 font-medium"
+            routerLink="/quienessomos"
+            routerLinkActive="class-name"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="toggleNavbar()"
+            > Quienes Somos</a
+          >
+        </li>
+        <li>
+          <a
+            class="act text-black transition-colors duration-500 font-medium"
+            routerLink="/contacto"
+            routerLinkActive="class-name"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="toggleNavbar()"
+            > Contacto</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

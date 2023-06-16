@@ -32,3 +32,4 @@ export class ContactFormComponent implements OnInit {
     alert('Correcto');
   }
 }
+

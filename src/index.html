@@ -7,10 +7,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
     <!-- <my-app>Loading...</my-app> -->
     <!-- <app-landing-page></app-landing-page> -->
     <app-root></app-root>
+
+    <style>
+      @font-face {
+        font-family: 'Phonk-Regular';
+        src: url('../fonts/phonk-regular.eot');
+        /* IE 9 Compatibility Mode */
+        src: url('../fonts/phonk-regular.eot?#iefix')
+            format('embedded-opentype'),
+          /* IE < 9 */ url('../fonts/phonk-regular.woff2') format('woff2'),
+          /* Super Modern Browsers */ url('../fonts/phonk-regular.woff')
+            format('woff'),
+          /* Firefox >= 3.6, any other modern browser */
+            url('../fonts/phonk-regular.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+            url('../fonts/phonk-regular.svg#phonk-regular') format('svg');
+        /* Chrome < 4, Legacy iOS */
+      }
+
+      html,
+      body {
+        font-family: 'Phonk-Regular';
+      }
+    </style>
   </body>
 </html>

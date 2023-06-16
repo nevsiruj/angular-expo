@@ -1,0 +1,182 @@
+<div
+  class="w-full h-40 bg-cover bg-center"
+  style="background-image: url('https://images.pagina12.com.ar/styles/focal_16_9_960x540/public/media/articles/21956/cannabis-20sab-20foto-20bernardino-20avila.jpg?h=909d1648&itok=onoBWCsA')"
+></div>
+
+<section class="contact-sec mb-8 mt-8">
+
+  <div
+    class="
+    opa
+      bg-blue
+      max-w-screen-lg
+      mx-auto
+      bg-white
+      shadow-lg
+      rounded
+      px-2
+      pt-6
+      pb-2
+      mb-2
+    "
+    
+  >
+  
+    <form
+      
+      (ngSubmit)="submitForm()"
+      [formGroup]="contactForm"
+      class="bg-white rounded px-8 pt-6 pb-8 mb-4 form"
+      
+    >
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
+          >Nombre<span class="text-red-400"> * </span></label
+        >
+        <input
+          class="
+            shadow
+            appearance-none
+            border
+            rounded
+            w-full
+            py-2
+            px-3
+            text-gray-700
+            leading-tight
+            focus:outline-none focus:shadow-outline
+          "
+          type="text"
+          id="name"
+          formControlName="name"
+          required
+        />
+        <div
+          *ngIf="
+            contactForm.controls.name.invalid &&
+            (contactForm.controls.name.dirty ||
+              contactForm.controls.name.touched)
+          "
+          class="text-red-500 text-xs mt-1"
+        >
+          El nombre es requerido.
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="email"
+          >Email<span class="text-red-400"> * </span></label
+        >
+        <input
+          class="
+            shadow
+            appearance-none
+            border
+            rounded
+            w-full
+            py-2
+            px-3
+            text-gray-700
+            leading-tight
+            focus:outline-none focus:shadow-outline
+          "
+          type="email"
+          id="email"
+          formControlName="email"
+          required
+        />
+
+        <div
+          *ngIf="
+            contactForm.controls.email.invalid &&
+            (contactForm.controls.email.dirty ||
+              contactForm.controls.email.touched)
+          "
+          class="text-red-500 text-xs mt-1"
+        >
+          El email es requerido.
+        </div>
+
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="phone"
+          >Teléfono</label
+        >
+        <input
+          class="
+            shadow
+            appearance-none
+            border
+            rounded
+            w-full
+            py-2
+            px-3
+            text-gray-700
+            leading-tight
+            focus:outline-none focus:shadow-outline
+          "
+          type="tel"
+          id="phone"
+          formControlName="phone"
+        />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="message"
+          >Mensaje<span class="text-red-400"> * </span></label
+        >
+        <textarea
+          class="
+            shadow
+            appearance-none
+            border
+            rounded
+            w-full
+            py-8
+            px-3
+            text-gray-700
+            leading-tight
+            focus:outline-none focus:shadow-outline
+          "
+          id="message"
+          formControlName="message"
+          required
+        ></textarea>
+        
+        <div
+          *ngIf="
+            contactForm.controls.message.invalid &&
+            (contactForm.controls.message.dirty ||
+              contactForm.controls.message.touched)
+          "
+          class="text-red-500 text-xs mt-1"
+        >
+          El mensaje es requerido.
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <button
+          class="
+            bg-[#D39400]
+            hover:bg-blue-700
+            text-white
+            font-bold
+            py-2
+            px-4
+            rounded
+            focus:outline-none focus:shadow-outline
+            cursor-pointer
+          "
+          type="submit"
+          [disabled]="contactForm.invalid"
+        >
+          Enviar
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+</section>
