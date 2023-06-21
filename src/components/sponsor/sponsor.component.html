@@ -27,14 +27,12 @@
         flex
         gap-2">
             <p>Quiero ser *</p>
-            <div class="flex gap-4">
-                <input type="checkbox" name="Sponsor" id="">
-                <label for="Sponsor">Sponsor</label>
-            </div>
-            <div class="flex gap-4">
-                <input type="checkbox" name="Expositor" id="">
-                <label for="">Expositor</label>
-            </div>
+            <label class="flex gap-4">
+                <input type="radio" name="Sponsor" id="">Sponsor
+            </label>
+            <label class="flex gap-4">
+                <input type="radio" name="Sponsor" id="">Expositor
+            </label>
         </div>
     </div>
   <div
@@ -51,11 +49,13 @@
       pb-2
       mb-2
     "
-    
   >
   
     <form
-      
+    (ngSubmit)="submitForm()"
+    [formGroup]="contactForm"
+    class="bg-white rounded px-8 pt-6 pb-8 mb-4 form"
+     
     >
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
@@ -74,8 +74,17 @@
             leading-tight
             focus:outline-none focus:shadow-outline
           "
+          type="text"
+          id="name"
+          formControlName="name"
+          required
         />
         <div
+          *ngIf="
+          contactForm.controls.name.invalid &&
+          (contactForm.controls.name.dirty ||
+            contactForm.controls.name.touched)
+          "
           class="text-red-500 text-xs mt-1"
         >
           El nombre es requerido.
@@ -99,9 +108,18 @@
             leading-tight
             focus:outline-none focus:shadow-outline
           "
+          type="email"
+          id="email"
+          formControlName="email"
+          required
         />
 
         <div
+          *ngIf="
+          contactForm.controls.email.invalid &&
+          (contactForm.controls.email.dirty ||
+            contactForm.controls.email.touched)
+          "
           class="text-red-500 text-xs mt-1"
         >
           El email es requerido.
@@ -126,6 +144,9 @@
             leading-tight
             focus:outline-none focus:shadow-outline
           "
+          type="tel"
+          id="phone"
+          formControlName="phone"
         />
       </div>
 
@@ -146,9 +167,17 @@
             leading-tight
             focus:outline-none focus:shadow-outline
           "
+          id="message"
+          formControlName="message"
+          required
         ></textarea>
         
         <div
+          *ngIf="
+          contactForm.controls.message.invalid &&
+          (contactForm.controls.message.dirty ||
+            contactForm.controls.message.touched)
+          "
           class="text-red-500 text-xs mt-1"
         >
           El mensaje es requerido.
@@ -168,6 +197,8 @@
             focus:outline-none focus:shadow-outline
             cursor-pointer
           "
+          type="submit"
+          [disabled]="contactForm.invalid"
         >
           Enviar
         </button>

@@ -8,6 +8,7 @@ import { ContactFormComponent } from '../contact-form/contact-form.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SponsorComponent } from '../sponsor/sponsor.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     QuienesSomosComponent,
     ContactFormComponent,
     FooterComponent,
+    SponsorComponent
   ],
   imports: [
     BrowserModule,

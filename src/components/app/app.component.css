@@ -51,13 +51,15 @@
 .drop-content{
     width: auto;
     padding: 0rem .5rem;
-    position: fixed;
+    position: absolute;
     display: grid;
     grid-template-rows: var(--rows, 0fr);
     transition: .5s grid-template-rows;
-    background: #000;
-    color: white;
+    background: #fff;
+    color: var(--color-Burnham);
     margin-top: 5px;
+    border-radius: .5rem;
+    animation: 3s infinite linear;
 }
 
 .drop-sub{
@@ -74,4 +76,10 @@
     transition: .5s color;
 }
 
+@media screen and (max-width: 700px) {
+    .drop-content{
+        background: #000;
+        color: #fff;
+    }
+}
 
