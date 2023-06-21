@@ -31,11 +31,10 @@
     position: relative;
 }
 .flex-active span{
-
     display: inline-block;
     vertical-align: middle;
 }
-
+/* 
 .drop-list:has(:checked){
     --rows: 1fr;
 }
@@ -53,7 +52,7 @@
     padding: 0rem .5rem;
     position: absolute;
     display: grid;
-    grid-template-rows: var(--rows, 0fr);
+     grid-template-rows: var(--rows, 0fr); 
     transition: .5s grid-template-rows;
     background: #fff;
     color: var(--color-Burnham);
@@ -75,7 +74,25 @@
     color: #D39400;
     transition: .5s color;
 }
-
+ */
+ .drop-sub{
+    width: auto;
+    padding: 0rem .5rem;
+    position: absolute;
+    display: none;
+     grid-template-rows: var(--rows, 0fr); 
+    transition: .5s grid-template-rows;
+    background: #fff;
+    color: var(--color-Burnham);
+    margin-top: 5px;
+    border-radius: .5rem;
+ }
+ .act:hover .drop-sub{
+     display: grid;
+ }
+ 
+ 
+ 
 @media screen and (max-width: 700px) {
     .drop-content{
         background: #000;
