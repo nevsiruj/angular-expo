@@ -8,6 +8,7 @@
 
 .act:hover{
     color: #D39400;
+    cursor: pointer;
 }
 
 .class-name{
@@ -77,26 +78,28 @@
  */
  .drop-sub{
     width: auto;
-    padding: 0rem .5rem;
-    position: absolute;
+    height: 35px;
+    padding: .5rem .7rem;
     display: none;
-     grid-template-rows: var(--rows, 0fr); 
-    transition: .5s grid-template-rows;
+    align-items: center;
+    position: absolute;
     background: #fff;
-    color: var(--color-Burnham);
-    margin-top: 5px;
+    color: #D39400;    
     border-radius: .5rem;
  }
- .act:hover .drop-sub{
-     display: grid;
+ .drop-list:hover .drop-sub{
+    display: flex;
+ }
+ .drop-sub:hover{
+    display: flex;
  }
  
- 
- 
 @media screen and (max-width: 700px) {
-    .drop-content{
+    .drop-sub{
         background: #000;
-        color: #fff;
     }
+    .act{
+        color: #000;
+     }
 }
 
