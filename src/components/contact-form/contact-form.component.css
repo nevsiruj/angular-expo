@@ -8,3 +8,11 @@
     background-size: cover;
     background-position: 50%;
 }
+
+.position-header{
+    background: rgb(212, 148, 0);
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding-left: 5rem;
+}
