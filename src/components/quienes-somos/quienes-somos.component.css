@@ -13,8 +13,7 @@
     }
 }
 .bg-quienes{
-    /* background: url(../../assets/images/photo-1635791551959-e2282b331af3.webp); */
-    background: url(https://images.unsplash.com/photo-1636775861341-9acbbdcdf976?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80);
-    background-position: 80%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,51,39,1) 35%, rgba(0,48,48,0.87718837535014) 100%);
     background-size: cover;
 }
