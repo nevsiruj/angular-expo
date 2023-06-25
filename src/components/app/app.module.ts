@@ -9,6 +9,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SponsorComponent } from '../sponsor/sponsor.component';
+import { ParticipantesComponent } from '../participantes/participantes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SponsorComponent } from '../sponsor/sponsor.component';
     QuienesSomosComponent,
     ContactFormComponent,
     FooterComponent,
-    SponsorComponent
+    SponsorComponent,
+    ParticipantesComponent,
   ],
   imports: [
     BrowserModule,
