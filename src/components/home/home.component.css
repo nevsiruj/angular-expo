@@ -141,4 +141,20 @@
 }
 
 
+@media screen and (max-width: 1150px) {
+  .fix-respon{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+
+@media screen and (max-width: 700px) {
+  .fix-respon-children{
+    display: flex;
+    flex-direction: column;
+  }
+  .fix-respon-children img{
+    margin-top: 0 !important;
+  }
+}
