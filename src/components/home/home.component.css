@@ -6,10 +6,10 @@
 }
 
 .bg-home{
-  background-image: url(https://files.fm/thumb_show.php?i=wwpcr3278); 
+  background-image: url(https://files.fm/thumb_show.php?i=wwpcr3278);
   background-size: cover; 
   background-position: center; 
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 
@@ -52,28 +52,23 @@
   text-align: center;
 
 }
-
 .countdown-2 p{
   line-height: 40px;
   font-size: 13px;  
 }
-
 .countdown-2 span{
   font-weight: 600;
   display: block;
   font-size: 60px;
 }
-
 .font-fix{
   font-size: 60px;
 }
-
 @media screen and (max-width: 1114px) {
   .font-fix{
     font-size: 40px;
   }
 }
-
 @media screen and (max-width: 800px) {
   .font-fix{
     font-size: 30px;
@@ -97,7 +92,6 @@
   }
 
 }
-
 @media screen and (max-width: 570px) {
   .mobile-hidden{
     display: none;
@@ -109,7 +103,7 @@
   }
 }
 @media screen and (max-width: 545px) {
-  
+
   .font-fix{
     font-size: 25px;
   }
@@ -117,7 +111,6 @@
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 460px) {
   
   .font-fix{
@@ -138,23 +131,4 @@
     font-size: 25px;
   }
 
-}
-
-
-@media screen and (max-width: 1150px) {
-  .fix-respon{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-  .fix-respon-children{
-    display: flex;
-    flex-direction: column;
-  }
-  .fix-respon-children img{
-    margin-top: 0 !important;
-  }
 }
