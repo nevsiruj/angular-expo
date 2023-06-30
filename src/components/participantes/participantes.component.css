@@ -1,13 +1,21 @@
-.position-header{
-    background: rgb(212, 148, 0);
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    padding-left: 5rem;
+.position-header {
+  background: rgb(212, 148, 0);
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  padding-left: 5rem;
 }
 
-/* img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-} */
+.colorful-bg {
+  display: inline-block;
+  background-color: #169542; /* Cambia #169542 por el color que desees */
+  color: #ffffff; /* Cambia #ffffff por el color del texto que desees */
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.colorful-bg:hover {
+  background-color: #1daa52; /* Cambia #1daa52 por el color que desees para el hover */
+}
