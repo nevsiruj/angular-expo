@@ -1,17 +1,15 @@
-
-:root{
+:root {
   --color-Burnham: '#003327';
   --color-BudaOro: '#D39400';
   --color-Plata: '#Bababa';
 }
 
-.bg-home{
-  background-image: url(https://files.fm/thumb_show.php?i=wwpcr3278);
-  background-size: cover; 
-  background-position: center; 
+.bg-home {
+  background-image: url(https://files.fm/thumb_show.php?i=ea87s78yj);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
-
 
 @keyframes fadeInOut {
   0% {
@@ -32,14 +30,13 @@
   }
 }
 
-.btn-w{
+.btn-w {
   width: 230px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-.countdown-2{
-   
-  background-color: rgb(0, 51, 39, .5);
+.countdown-2 {
+  background-color: rgb(0, 51, 39, 0.5);
   color: #fff;
   animation: fadeInOut 4s ease-in-out infinite;
 
@@ -50,85 +47,86 @@
 
   padding: 2rem 1rem 1rem 1rem;
   text-align: center;
-
 }
-.countdown-2 p{
+.countdown-2 p {
   line-height: 40px;
-  font-size: 13px;  
+  font-size: 13px;
 }
-.countdown-2 span{
+.countdown-2 span {
   font-weight: 600;
   display: block;
   font-size: 60px;
 }
-.font-fix{
+.font-fix {
   font-size: 60px;
 }
 @media screen and (max-width: 1114px) {
-  .font-fix{
+  .font-fix {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 800px) {
-  .font-fix{
+  .font-fix {
     font-size: 30px;
   }
-  
-  .countdown-2{
+
+  .countdown-2 {
     margin: 0 auto;
     gap: 30px;
     padding: 2rem 2rem 1rem 2rem;
   }
-  
-  .countdown-2 p{
+
+  .countdown-2 p {
     line-height: 25px;
     font-size: 10px;
   }
 
-  .countdown-2 span{
+  .countdown-2 span {
     font-weight: 600;
     display: block;
     font-size: 50px;
   }
-
 }
 @media screen and (max-width: 570px) {
-  .mobile-hidden{
+  .mobile-hidden {
     display: none;
   }
-  .countdown-2{
+  .countdown-2 {
     margin: 0 auto;
     gap: 30px;
-    padding: 1rem ;
+    padding: 1rem;
   }
 }
 @media screen and (max-width: 545px) {
-
-  .font-fix{
+  .font-fix {
     font-size: 25px;
   }
-  .fix-size{ 
+  .fix-size {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 460px) {
-  
-  .font-fix{
+  .font-fix {
     font-size: 20px;
   }
-  
-  .countdown-2{
+
+  .countdown-2 {
     margin: 0 auto;
     gap: 20px;
-
-  }
-  
-  .countdown-2 p{
-    font-size: 10px;  
   }
 
-  .countdown-2 span{
+  .countdown-2 p {
+    font-size: 10px;
+  }
+
+  .countdown-2 span {
     font-size: 25px;
   }
-
+}
+.colorful-bg {
+  display: inline-block;
+  background-color: #169542; /* Cambia #ff0000 por el color que desees */
+  color: #ffffff; /* Cambia #ffffff por el color del texto que desees */
+  padding: 5px;
+  border-radius: 5px;
 }
