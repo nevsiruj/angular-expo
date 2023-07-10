@@ -13,6 +13,6 @@
     background: rgb(212, 148, 0);
     display: flex;
     justify-content: left;
-    align-items: end;
+    align-items: flex-end;
     padding-left: 5rem;
 }
