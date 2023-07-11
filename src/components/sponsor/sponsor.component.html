@@ -6,8 +6,11 @@
 
 </div>
 
-<section class="contact-sec">
-    <div class="
+<section class="contact-sec" *ngIf="visibleForm">
+
+    <div 
+    [formGroup]="contactForm"
+    class="
     flex-col
     flex
     gap-4
@@ -28,184 +31,198 @@
         gap-2">
             <p>Quiero ser *</p>
             <label class="flex gap-4">
-                <input type="radio" name="Sponsor" id="">Sponsor
+                <input 
+                formControlName="tipo"
+                type="radio" value="sponsor" id="">Sponsor
             </label>
             <label class="flex gap-4">
-                <input type="radio" name="Sponsor" id="">Expositor
+                <input 
+                formControlName="tipo"
+                type="radio" value="expositor" id="">Expositor
             </label>
         </div>
     </div>
-  <div
-    class="
-    opa
-      bg-blue
-      max-w-screen-lg
-      mx-auto
-      bg-white
-      shadow-lg
-      rounded
-      px-8
-      pt-8
-      pb-2
-      mb-2
-    "
-  >
-  
-    <form
-    (ngSubmit)="submitForm()"
-    [formGroup]="contactForm"
-    class="bg-white rounded px-8 pt-6 pb-8 mb-4 form"
-     
+    <div
+      class="
+      opa
+        bg-blue
+        max-w-screen-lg
+        mx-auto
+        bg-white
+        shadow-lg
+        rounded
+        px-8
+        pt-8
+        pb-2
+        mb-2
+      "
     >
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
-          >Nombre<span class="text-red-400"> * </span></label
-        >
-        <input
-          class="
-            shadow
-            appearance-none
-            border
-            rounded
-            w-full
-            py-2
-            px-3
-            text-gray-700
-            leading-tight
-            focus:outline-none focus:shadow-outline
-          "
-          type="text"
-          id="name"
-          formControlName="name"
-          required
-        />
-        <div
-          *ngIf="
-          contactForm.controls.name.invalid &&
-          (contactForm.controls.name.dirty ||
-            contactForm.controls.name.touched)
-          "
-          class="text-red-500 text-xs mt-1"
-        >
-          El nombre es requerido.
-        </div>
-      </div>
-
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="email"
-          >Email<span class="text-red-400"> * </span></label
-        >
-        <input
-          class="
-            shadow
-            appearance-none
-            border
-            rounded
-            w-full
-            py-2
-            px-3
-            text-gray-700
-            leading-tight
-            focus:outline-none focus:shadow-outline
-          "
-          type="email"
-          id="email"
-          formControlName="email"
-          required
-        />
-
-        <div
-          *ngIf="
-          contactForm.controls.email.invalid &&
-          (contactForm.controls.email.dirty ||
-            contactForm.controls.email.touched)
-          "
-          class="text-red-500 text-xs mt-1"
-        >
-          El email es requerido.
+    
+      <form
+      (ngSubmit)="submitForm()"
+      [formGroup]="contactForm"
+      class="bg-white rounded px-8 pt-6 pb-8 mb-4 form"
+      
+      >
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
+            >Nombre<span class="text-red-400"> * </span></label
+          >
+          <input
+            class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline
+            "
+            type="text"
+            id="name"
+            formControlName="name"
+            required
+          />
+          <div
+            *ngIf="
+            contactForm.controls.name.invalid &&
+            (contactForm.controls.name.dirty ||
+              contactForm.controls.name.touched)
+            "
+            class="text-red-500 text-xs mt-1"
+          >
+            El nombre es requerido.
+          </div>
         </div>
 
-      </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email"
+            >Email<span class="text-red-400"> * </span></label
+          >
+          <input
+            class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline
+            "
+            type="email"
+            id="email"
+            formControlName="email"
+            required
+          />
 
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="phone"
-          >Teléfono</label
-        >
-        <input
-          class="
-            shadow
-            appearance-none
-            border
-            rounded
-            w-full
-            py-2
-            px-3
-            text-gray-700
-            leading-tight
-            focus:outline-none focus:shadow-outline
-          "
-          type="tel"
-          id="phone"
-          formControlName="phone"
-        />
-      </div>
+          <div
+            *ngIf="
+            contactForm.controls.email.invalid &&
+            (contactForm.controls.email.dirty ||
+              contactForm.controls.email.touched)
+            "
+            class="text-red-500 text-xs mt-1"
+          >
+            El email es requerido.
+          </div>
 
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="message"
-          >Mensaje<span class="text-red-400"> * </span></label
-        >
-        <textarea
-          class="
-            shadow
-            appearance-none
-            border
-            rounded
-            w-full
-            py-8
-            px-3
-            text-gray-700
-            leading-tight
-            focus:outline-none focus:shadow-outline
-          "
-          id="message"
-          formControlName="message"
-          required
-        ></textarea>
-        
-        <div
-          *ngIf="
-          contactForm.controls.message.invalid &&
-          (contactForm.controls.message.dirty ||
-            contactForm.controls.message.touched)
-          "
-          class="text-red-500 text-xs mt-1"
-        >
-          El mensaje es requerido.
         </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="phone"
+            >Teléfono</label
+          >
+          <input
+            class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline
+            "
+            type="tel"
+            id="phone"
+            formControlName="phone"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message"
+            >Mensaje<span class="text-red-400"> * </span></label
+          >
+          <textarea
+            class="
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-8
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline
+            "
+            id="message"
+            formControlName="message"
+            required
+          ></textarea>
+          
+          <div
+            *ngIf="
+            contactForm.controls.message.invalid &&
+            (contactForm.controls.message.dirty ||
+              contactForm.controls.message.touched)
+            "
+            class="text-red-500 text-xs mt-1"
+          >
+            El mensaje es requerido.
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button
+            class="
+              bg-[#D39400]
+              hover:bg-blue-700
+              text-white
+              font-bold
+              py-2
+              px-4
+              rounded
+              focus:outline-none focus:shadow-outline
+              cursor-pointer
+            "
+            type="submit"
+            [disabled]="contactForm.invalid"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+
+
+    </div>
+
+</section>
+
+<section class="w-full h-96 flex items-center justify-center bg-white text-center z-9" *ngIf="mensajeEnviado">
+    <div class="border flex items-center justify-center flex-col sombreado">
+      <h1 class="text-green-900">Gracias por contactarnos, en breve te responderemos.</h1>
+      <div>
+        <h1 class="text-green-900">¡Saludos!</h1> 
+        <img class="w-16 mt-6 ml-2" src="https://files.fm/thumb.php?i=2a9nf6p9y" alt="">
       </div>
-
-      <div class="flex items-center justify-between">
-        <button
-          class="
-            bg-[#D39400]
-            hover:bg-blue-700
-            text-white
-            font-bold
-            py-2
-            px-4
-            rounded
-            focus:outline-none focus:shadow-outline
-            cursor-pointer
-          "
-          type="submit"
-          [disabled]="contactForm.invalid"
-        >
-          Enviar
-        </button>
-      </div>
-    </form>
-
-
-  </div>
-
+    </div>
 </section>

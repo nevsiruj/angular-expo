@@ -12,10 +12,12 @@ const routes: Routes = [
   { path: 'sponsor', component: SponsorComponent },
   { path: 'contacto', component: ContactFormComponent },
   { path: 'participantes', component: ParticipantesComponent },
+  // Aquí agregamos una ruta comodín para capturar cualquier otra ruta
+  { path: '**', component: HomeComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {}

@@ -2,18 +2,14 @@
   class="w-full h-40 bg-cover bg-center"
   style="background-image: url('https://images.pagina12.com.ar/styles/focal_16_9_960x540/public/media/articles/21956/cannabis-20sab-20foto-20bernardino-20avila.jpg?h=909d1648&itok=onoBWCsA')"
 ></div> -->
-<div
-  class="w-full h-40 bg-cover bg-center position-header"
->
-
-    <h1 class="sm:text-4xl text-2xl text-white p-6 ">Contacto</h1>
-
+<div class="w-full h-40 bg-cover bg-center position-header">
+  <h1 class="sm:text-4xl text-2xl text-white p-6">Contacto</h1>
 </div>
-<section class="contact-sec">
 
+<section class="contact-sec" *ngIf="visibleForm">
   <div
     class="
-    opa
+      opa
       bg-blue
       max-w-screen-lg
       mx-auto
@@ -25,15 +21,11 @@
       pb-2
       mb-2
     "
-    
   >
-  
     <form
-      
       (ngSubmit)="submitForm()"
       [formGroup]="contactForm"
       class="bg-white rounded px-8 pt-6 pb-8 mb-4 form"
-      
     >
       <div class="mb-4">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
@@ -102,7 +94,6 @@
         >
           El email es requerido.
         </div>
-
       </div>
 
       <div class="mb-4">
@@ -149,7 +140,7 @@
           formControlName="message"
           required
         ></textarea>
-        
+
         <div
           *ngIf="
             contactForm.controls.message.invalid &&
@@ -160,6 +151,7 @@
         >
           El mensaje es requerido.
         </div>
+
       </div>
 
       <div class="flex items-center justify-between">
@@ -181,8 +173,22 @@
           Enviar
         </button>
       </div>
+
+      
+
+
+
     </form>
+  </div>
+</section>
 
 
+<section class="w-full h-96 flex items-center justify-center bg-white text-center z-9" *ngIf="mensajeEnviado">
+  <div class="border flex items-center justify-center flex-col sombreado">
+    <h1 class="text-green-900">Gracias por contactarnos, en breve te responderemos.</h1>
+    <div>
+      <h1 class="text-green-900">¡Saludos!</h1> 
+      <img class="w-16 mt-6 ml-2" src="https://files.fm/thumb.php?i=2a9nf6p9y" alt="">
+    </div>
   </div>
 </section>

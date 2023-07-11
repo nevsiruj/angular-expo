@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SponsorComponent } from '../sponsor/sponsor.component';
 import { ParticipantesComponent } from '../participantes/participantes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,13 +20,15 @@ import { ParticipantesComponent } from '../participantes/participantes.component
     ContactFormComponent,
     FooterComponent,
     SponsorComponent,
-    ParticipantesComponent,
+    ParticipantesComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
