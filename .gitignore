@@ -4,3 +4,5 @@ package-lock.json
 src/polyfills.ts
 src/tsconfig.app.json
 package.json
+
+.angular
