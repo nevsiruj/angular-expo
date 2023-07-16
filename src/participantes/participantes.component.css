@@ -1,0 +1,13 @@
+.position-header{
+    background: rgb(212, 148, 0);
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    padding-left: 5rem;
+}
+
+/* img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+} */

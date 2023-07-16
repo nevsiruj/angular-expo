@@ -1,0 +1,19 @@
+.about article{
+    width: 50%;
+}
+
+.logo-img{
+    width: 180px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .about article{
+        width: 100%;
+    }
+}
+.bg-quienes{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,51,39,1) 35%, rgba(0,48,48,0.87718837535014) 100%);
+    background-size: cover;
+}

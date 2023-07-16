@@ -1,0 +1,177 @@
+:root {
+  --color-Burnham: '#003327';
+  --color-BudaOro: '#D39400';
+  --color-Plata: '#Bababa';
+}
+
+.bg-home{
+  position: static;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-home::before{
+  position: absolute;
+  content: '';
+  top: 0;left: 0;bottom: 0;right: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://files.fm/thumb_show.php?i=kb5ap9uun);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 390px) and (max-width: 800px) {
+  .fix-bg{
+    margin-top: 15vh;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 30px;
+  }
+}
+
+
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.btn-w {
+  width: 230px;
+  padding: 0.5rem;
+}
+
+.countdown-2 {
+  background-color: rgb(0, 51, 39, 0.5);
+  color: #fff;
+  animation: fadeInOut 4s ease-in-out infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+.countdown-2 p {
+  line-height: 40px;
+  font-size: 13px;
+}
+.countdown-2 span {
+  font-weight: 600;
+  display: block;
+  font-size: 60px;
+}
+.font-fix {
+  font-size: 60px;
+}
+@media screen and (max-width: 1114px) {
+  .font-fix {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .font-fix {
+    font-size: 30px;
+  }
+
+  .countdown-2 {
+    margin: 0 auto;
+    gap: 30px;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .countdown-2 p {
+    line-height: 25px;
+    font-size: 10px;
+  }
+
+  .countdown-2 span {
+    font-weight: 600;
+    display: block;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .countdown-2 {
+    margin: 0 auto;
+    gap: 30px;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 545px) {
+  .font-fix {
+    font-size: 25px;
+  }
+  .fix-size {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .font-fix {
+    font-size: 20px;
+  }
+
+  .countdown-2 {
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .countdown-2 p {
+    font-size: 10px;
+  }
+
+  .countdown-2 span {
+    font-size: 25px;
+  }
+}
+.colorful-bg {
+  display: inline-block;
+  background-color: #169542; /* Cambia #ff0000 por el color que desees */
+  color: #ffffff; /* Cambia #ffffff por el color del texto que desees */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
+.logo-fix{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.logo-fix img{
+  width: 140px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.bg-f{
+  background: #D39400;
+  color: #fff;
+}
